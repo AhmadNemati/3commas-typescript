@@ -16,7 +16,7 @@ export class API {
     this.SECRETS = options.secrets;
     this.axios = Axios.create({
       baseURL: ENDPOINT,
-      timeout: 3000,
+      timeout: 30000,
       headers: { APIKEY: this.KEY },
     });
     this.axios.interceptors.request.use(
